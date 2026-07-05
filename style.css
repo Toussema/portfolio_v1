@@ -367,6 +367,11 @@ section {
   text-align: center;
 }
 
+.details-container:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -630,8 +635,6 @@ footer p {
     transform: translateX(-50%) scale(1.3);
 }
 
-
-
 .volunteering-images{
     display:flex;
     justify-content:center;
@@ -653,4 +656,43 @@ footer p {
 #skills .details-container{
     width:300px;
     min-height:330px;
+}
+/* Skills container */
+
+#skills .skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:1.5rem;
+}
+
+#skills .icon{
+    width:70px;
+    height:70px;
+    margin-bottom:1rem;
+}
+
+.details-container:hover .icon{
+    transform:rotate(6deg) scale(1.08);
+}
+
+/* Badge */
+
+.skill-tag{
+    background:#f5f5f5;
+    color:#444;
+    padding:8px 16px;
+    border-radius:999px;
+    font-size:.92rem;
+    font-weight:500;
+    border:1px solid #e5e5e5;
+    transition:all .3s ease;
+    cursor:default;
+}
+
+.skill-tag:hover{
+    background:#333;
+    color:white;
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
 }
